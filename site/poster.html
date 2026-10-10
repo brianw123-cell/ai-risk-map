@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="description" content="Eighteen ways AI could go, sorted by what needs new rules.">
+<title>The AI Risk Map poster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"><style>
+:root{--bg:#e9ecf0;--paper:#f8f9fb;--ink:#131a22;--ink2:#3c4653;--ink3:#6a7583;--rule:#c9d0d9;--soft:#dde2e9;
+--deep:#134a5b;--deepsoft:#dbe8ec;--accent:#8f6410;--accentsoft:#f2e7cd;--act:#134a5b;--prep:#8f6410;--enf:#a3402a;--dot:#2a78d6;color-scheme:light}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:"Source Serif 4",Georgia,serif;padding:24px 16px}
+.sheet{max-width:1200px;margin:0 auto;background:var(--paper);border:1px solid var(--rule);padding:clamp(24px,5vw,60px)}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;font-weight:700;letter-spacing:-.03em;line-height:1;font-size:clamp(40px,7vw,76px);margin:12px 0 0;text-wrap:balance}
+.sub{font-size:clamp(17px,2vw,22px);line-height:1.45;color:var(--ink2);max-width:62ch;margin:16px 0 0}
+.mono{font-family:"IBM Plex Mono",monospace}
+.foot{margin-top:36px;padding-top:18px;border-top:2px solid var(--ink);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink3);line-height:1.6}
+.foot b{color:var(--ink);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--ink2)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.sw{width:18px;height:14px;border-radius:2px;display:inline-block}
+.sw.act{background:var(--act)}.sw.prep{background:var(--prep)}.sw.enf{background:var(--enf)}.sw.com{background:#fff;border:1.5px dashed var(--ink3)}
+a{color:inherit}
+
+.grid{display:grid;grid-template-columns:minmax(120px,210px) 1fr 1fr;gap:6px;margin-top:34px}
+.gh{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:0 4px 6px}
+.gh.g{color:var(--deep)}.gh.b{color:var(--accent)}
+.dom{font-family:Archivo,sans-serif;font-weight:600;font-size:15px;color:var(--ink2);display:flex;align-items:center;padding:10px 4px;border-top:1px solid var(--soft)}
+.cell{border-radius:3px;padding:14px 16px;display:flex;flex-direction:column;justify-content:center;gap:6px;min-height:76px;min-width:0}
+.cell .nm{font-family:Archivo,sans-serif;font-weight:600;font-size:clamp(14px,1.6vw,17px);line-height:1.22}
+.cell .tl{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+.cell.act{background:var(--act);color:#fff}.cell.prep{background:var(--prep);color:#fff}.cell.enf{background:var(--enf);color:#fff}
+.cell.com{background:#fff;color:var(--ink);border:1.5px dashed var(--ink3)}
+.neu{margin-left:6px;padding:1px 5px;border:1px solid currentColor;border-radius:2px}
+.stats{display:flex;flex-wrap:wrap;gap:14px 40px;margin-top:30px}
+.stats div{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+.stats b{display:block;font-family:Archivo,sans-serif;font-size:40px;letter-spacing:-.02em;color:var(--ink);text-transform:none;line-height:1.05}
+@media (max-width:640px){.grid{grid-template-columns:1fr 1fr}.dom{grid-column:1 / -1;padding-bottom:2px}.gh:first-child{display:none}}
+</style>
+</head>
+<body>
+<div class="sheet">
+<div class="eyebrow">The AI Risk Map · working draft</div>
+<h1>Eighteen ways AI could go</h1>
+<p class="sub">Eight areas of life, each with a hopeful and a worrying direction, plus two that fit nowhere. Every scenario gets both sides' case in their own words, every published probability, and one test: does it need new rules, or mainly explaining?</p>
+<div class="grid"><div class="gh">Area</div><div class="gh g">Hopeful direction</div><div class="gh b">Worrying direction</div><div class="dom">Health and biology</div><div class="cell act"><span class="nm">Medical progress compressed into years</span><span class="tl">Policy: act now</span></div><div class="cell enf"><span class="nm">AI-assisted biological or chemical attack</span><span class="tl">Enforcement problem</span></div><div class="dom">Work and income</div><div class="cell act"><span class="nm">Broad productivity gains and cheaper goods</span><span class="tl">Policy: act now</span></div><div class="cell act"><span class="nm">Mass job loss and widening inequality</span><span class="tl">Policy: act now</span></div><div class="dom">Science, energy and environment</div><div class="cell act"><span class="nm">Faster discovery and cheaper clean energy</span><span class="tl">Policy: act now</span></div><div class="cell act"><span class="nm">AI&#x27;s energy and resource demand outpaces its gains</span><span class="tl">Policy: act now</span></div><div class="dom">Information and democracy</div><div class="cell act"><span class="nm">Better shared understanding and forecasting</span><span class="tl">Policy: act now</span></div><div class="cell enf"><span class="nm">Manipulation, fraud and collapse of trust</span><span class="tl">Enforcement problem</span></div><div class="dom">Security and infrastructure</div><div class="cell act"><span class="nm">Defenders gain the advantage</span><span class="tl">Policy: act now</span></div><div class="cell enf"><span class="nm">Cheap large-scale cyberattacks and critical-system failures</span><span class="tl">Enforcement problem</span></div><div class="dom">Power and governance</div><div class="cell act"><span class="nm">Wider access and more accountable institutions</span><span class="tl">Policy: act now</span></div><div class="cell enf"><span class="nm">Concentrated power or AI-enabled surveillance</span><span class="tl">Enforcement problem</span></div><div class="dom">Daily life, mind and meaning</div><div class="cell act"><span class="nm">Personal tutors, care and freed time</span><span class="tl">Policy: act now</span></div><div class="cell enf"><span class="nm">Over-reliance, lost skills and unhealthy AI companions</span><span class="tl">Enforcement problem</span></div><div class="dom">Control of advanced AI</div><div class="cell act"><span class="nm">Powerful AI that stays aligned and overseeable</span><span class="tl">Policy: act now</span></div><div class="cell act"><span class="nm">Loss of control over advanced AI</span><span class="tl">Policy: act now</span></div><div class="dom">Outside any domain</div><div class="cell com"><span class="nm">AI disappoints: modest progress, investment falls</span><span class="tl">Communicate <span class="neu">neutral</span></span></div><div class="cell prep"><span class="nm">Unknown, combined and slow-building risks</span><span class="tl">Prepare and watch</span></div></div>
+<div class="legend"><span><i class="sw act"></i>Policy: act now. An action both sides accept</span><span><i class="sw enf"></i>Enforcement problem. The law exists, enforcement lags</span><span><i class="sw prep"></i>Prepare and watch</span><span><i class="sw com"></i>Communicate</span></div>
+<div class="stats"><div><b>18</b>scenarios</div><div><b>11</b>policy now</div><div><b>5</b>enforcement gaps</div><div><b>1</b>prepare and watch</div><div><b>1</b>communicate</div><div><b>0</b>signed off by both sides</div></div>
+<div class="foot"><span>Idea: Emad Mostaque, Moonshots with Peter Diamandis, 7 October 2026, at 49:14.</span><span>Full map with every source: <b>ai-risk-map.vercel.app</b></span><span>Working draft, October 2026. 0 of 18 scenarios signed off by both sides so far.</span></div>
+</div>
+</body>
+</html>

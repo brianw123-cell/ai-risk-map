@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 402" width="680" height="402" role="img" aria-label="Published estimates of the chance AI causes extinction or catastrophe, on a log scale from 0.1% to 30%">
+<rect width="680" height="402" fill="#ffffff"/>
+<style>text{font-family:Helvetica,Arial,sans-serif}</style>
+<line x1="300.0" y1="24" x2="300.0" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="300.0" y="370" font-size="11" fill="#7a8592" text-anchor="middle">0.1%</text>
+<line x1="365.5" y1="24" x2="365.5" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="365.5" y="370" font-size="11" fill="#7a8592" text-anchor="middle">0.3%</text>
+<line x1="437.3" y1="24" x2="437.3" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="437.3" y="370" font-size="11" fill="#7a8592" text-anchor="middle">1%</text>
+<line x1="502.7" y1="24" x2="502.7" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="502.7" y="370" font-size="11" fill="#7a8592" text-anchor="middle">3%</text>
+<line x1="574.5" y1="24" x2="574.5" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="574.5" y="370" font-size="11" fill="#7a8592" text-anchor="middle">10%</text>
+<line x1="640.0" y1="24" x2="640.0" y2="352" stroke="#d5dbe3" stroke-width="1"/>
+<text x="640.0" y="370" font-size="11" fill="#7a8592" text-anchor="middle">30%</text>
+<text x="20" y="54" font-size="13" font-weight="bold" fill="#131a22">Expert forecasters</text>
+<text x="20" y="70" font-size="11" fill="#4a5563">FRI tournament, 2022, extinction by 2100</text>
+<line x1="300.0" y1="58" x2="640.0" y2="58" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="379.6" cy="58" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="379.6" y="47" font-size="11" fill="#4a5563" text-anchor="middle">0.38%</text>
+<text x="20" y="100" font-size="13" font-weight="bold" fill="#131a22">AI domain experts</text>
+<text x="20" y="116" font-size="11" fill="#4a5563">Same tournament and question</text>
+<line x1="300.0" y1="104" x2="640.0" y2="104" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="502.7" cy="104" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="502.7" y="93" font-size="11" fill="#4a5563" text-anchor="middle">3%</text>
+<text x="20" y="146" font-size="13" font-weight="bold" fill="#131a22">Skeptical panel</text>
+<text x="20" y="162" font-size="11" fill="#4a5563">FRI collaboration, 2023, catastrophe by 2100</text>
+<line x1="300.0" y1="150" x2="640.0" y2="150" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="310.8" cy="150" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="310.8" y="139" font-size="11" fill="#4a5563" text-anchor="middle">0.12%</text>
+<text x="20" y="192" font-size="13" font-weight="bold" fill="#131a22">Concerned panel</text>
+<text x="20" y="208" font-size="11" fill="#4a5563">Same collaboration and question</text>
+<line x1="300.0" y1="196" x2="640.0" y2="196" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="615.8" cy="196" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="615.8" y="185" font-size="11" fill="#4a5563" text-anchor="middle">20%</text>
+<text x="20" y="238" font-size="13" font-weight="bold" fill="#131a22">AI researchers</text>
+<text x="20" y="254" font-size="11" fill="#4a5563">Survey of 2,778, 2023, “extremely bad” outcome</text>
+<line x1="300.0" y1="242" x2="640.0" y2="242" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="533.2" cy="242" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="533.2" y="231" font-size="11" fill="#4a5563" text-anchor="middle">5%</text>
+<text x="20" y="284" font-size="13" font-weight="bold" fill="#131a22">AI researchers</text>
+<text x="20" y="300" font-size="11" fill="#4a5563">Same survey, “inability to control” wording</text>
+<line x1="300.0" y1="288" x2="640.0" y2="288" stroke="#d5dbe3" stroke-width="1"/>
+<circle cx="574.5" cy="288" r="6" fill="#2a78d6" stroke="#ffffff" stroke-width="2"/>
+<text x="574.5" y="277" font-size="11" fill="#4a5563" text-anchor="middle">10%</text>
+<text x="20" y="330" font-size="13" font-weight="bold" fill="#131a22">Geoffrey Hinton</text>
+<text x="20" y="346" font-size="11" fill="#4a5563">Personal estimate, 2024, ~30 years</text>
+<line x1="300.0" y1="334" x2="640.0" y2="334" stroke="#d5dbe3" stroke-width="1"/>
+<rect x="574.5" y="329" width="41.4" height="10" rx="5" fill="#2a78d6"/>
+<text x="595.2" y="323" font-size="11" fill="#4a5563" text-anchor="middle">10–20%</text>
+<text x="300.0" y="394" font-size="10.5" fill="#7a8592">Log scale: each gridline is roughly three times the one before.</text>
+</svg>
