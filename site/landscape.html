@@ -41,15 +41,9 @@ a{color:inherit}
 .take div{border-left:3px solid var(--accent);padding:4px 0 4px 14px;font-size:16px;line-height:1.45;color:var(--ink2)}
 .take b{color:var(--ink)}
 </style>
-<style>
-.dlbar{max-width:1200px;margin:0 auto 12px;display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap}
-.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--paper);text-decoration:none}
-.dlbtn.primary{background:var(--ink);color:#fff}
-@media print{.dlbar{display:none!important}}
-</style>
+<style>@media print{body{padding:0;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact} .sheet{border:none} @page{margin:10mm}}</style>
 </head>
 <body>
-<div class="dlbar"><a class="dlbtn primary" href="/downloads/ai-risk-map-landscape.pdf" download="ai-risk-map-landscape.pdf">Download PDF</a><a class="dlbtn" href="/img/landscape.png" download="ai-risk-map-landscape.png">Download image</a><a class="dlbtn" href="/">Full map</a></div>
 <div class="sheet">
 <div class="eyebrow">The AI Risk Map · the big picture</div>
 <h1>Where AI's futures sit</h1>
@@ -63,8 +57,5 @@ a{color:inherit}
 </div>
 <div class="foot"><span>Idea: Emad Mostaque, Moonshots with Peter Diamandis, 7 October 2026, at 49:14.</span><span>Full map with every source: <b>ai-risk-map.vercel.app</b></span><span>Working draft, October 2026. 0 of 18 scenarios signed off by both sides so far.</span></div>
 </div>
-<script>(function(){var q=new URLSearchParams(location.search);var b=document.querySelector('.dlbar');
-if(q.has('print')){document.querySelectorAll('details').forEach(function(d){d.open=true});}
-if((q.has('bare')||q.has('print'))&&b){b.remove();}})();</script>
 </body>
 </html>
