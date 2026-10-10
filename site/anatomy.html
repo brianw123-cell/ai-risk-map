@@ -45,8 +45,15 @@ a{color:inherit}
 .step.skip{opacity:.4;border-style:dashed}
 .arrow{align-self:center;font-family:"IBM Plex Mono",monospace;color:var(--ink3)}
 </style>
+<style>
+.dlbar{max-width:1200px;margin:0 auto 12px;display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap}
+.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--paper);text-decoration:none}
+.dlbtn.primary{background:var(--ink);color:#fff}
+@media print{.dlbar{display:none!important}}
+</style>
 </head>
 <body>
+<div class="dlbar"><a class="dlbtn primary" href="/downloads/ai-risk-map-anatomy.pdf" download="ai-risk-map-anatomy.pdf">Download PDF</a><a class="dlbtn" href="/img/anatomy.png" download="ai-risk-map-anatomy.png">Download image</a><a class="dlbtn" href="/">Full map</a></div>
 <div class="sheet">
 <div class="eyebrow">The AI Risk Map · anatomy of one scenario</div>
 <h1>Loss of control over advanced AI</h1>
@@ -76,5 +83,8 @@ a{color:inherit}
 <p class="lead" style="margin-top:14px">The safeguards don't depend on settling who is right about the odds. That is the point of the map: find the actions both sides can live with.</p></div>
 <div class="foot"><span>Idea: Emad Mostaque, Moonshots with Peter Diamandis, 7 October 2026, at 49:14.</span><span>Full map with every source: <b>ai-risk-map.vercel.app</b></span><span>Working draft, October 2026. 0 of 18 scenarios signed off by both sides so far.</span></div>
 </div>
+<script>(function(){var q=new URLSearchParams(location.search);var b=document.querySelector('.dlbar');
+if(q.has('print')){document.querySelectorAll('details').forEach(function(d){d.open=true});}
+if((q.has('bare')||q.has('print'))&&b){b.remove();}})();</script>
 </body>
 </html>

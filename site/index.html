@@ -265,9 +265,17 @@ figure.fq svg{display:block; width:100%; height:auto}
 @media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
 </style>
 
+<style>
+.dlbar{display:flex;justify-content:flex-end;align-items:center;gap:.6rem;flex-wrap:wrap;padding:1rem 0 0}
+.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.6rem .95rem;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--surface);text-decoration:none}
+.dlbtn:hover{color:var(--ink);background:var(--surface-2)}
+.dlbtn.primary{background:var(--ink);color:var(--ground)}
+.dlbtn.primary:hover{background:var(--ink-2);color:var(--ground)}
+@media print{.dlbar,.filters{display:none!important} body{-webkit-print-color-adjust:exact;print-color-adjust:exact} details.card{break-inside:avoid-page} .mapgrid,.quad{min-width:0} @page{margin:12mm}}
+</style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap"><div class="dlbar"><a class="dlbtn primary" href="/downloads/ai-risk-map-summary.pdf" download="ai-risk-map-summary.pdf">Download PDF summary</a><a class="dlbtn" href="/downloads/ai-risk-map.pdf" download="ai-risk-map.pdf">Full PDF, every card</a><a class="dlbtn" href="/poster">One-page overview</a></div>
 <header class="mast">
   <div class="kicker"><span class="eyebrow">Working draft</span><span class="eyebrow">Not yet reviewed by either side</span><span class="eyebrow">Updated 9 October 2026</span></div>
   <h1>The AI<br>Risk Map</h1>
@@ -1411,5 +1419,8 @@ figure.fq svg{display:block; width:100%; height:auto}
 })();
 </script>
 
+<script>(function(){var q=new URLSearchParams(location.search);var b=document.querySelector('.dlbar');
+if(q.has('print')){document.querySelectorAll('details').forEach(function(d){d.open=true});}
+if((q.has('bare')||q.has('print'))&&b){b.remove();}})();</script>
 </body>
 </html>

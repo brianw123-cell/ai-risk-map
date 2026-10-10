@@ -3,3 +3,4 @@ __pycache__/
 site/.env*
 site/.vercel/
 .env*
+.vercel/

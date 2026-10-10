@@ -241,18 +241,53 @@ def anatomy(cards):
 </div>'''
     return doc("Anatomy of an AI scenario", "How the AI Risk Map breaks down one scenario: loss of control over advanced AI.", FONTS + f"<style>{css}</style>", body)
 
+
+# ---------- download bar (site only; downloads don't work inside the claude.ai artifact) ----------
+DL_JS = """<script>(function(){var q=new URLSearchParams(location.search);var b=document.querySelector('.dlbar');
+if(q.has('print')){document.querySelectorAll('details').forEach(function(d){d.open=true});}
+if((q.has('bare')||q.has('print'))&&b){b.remove();}})();</script>"""
+DL_CSS_PAGE = """<style>
+.dlbar{display:flex;justify-content:flex-end;align-items:center;gap:.6rem;flex-wrap:wrap;padding:1rem 0 0}
+.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.6rem .95rem;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--surface);text-decoration:none}
+.dlbtn:hover{color:var(--ink);background:var(--surface-2)}
+.dlbtn.primary{background:var(--ink);color:var(--ground)}
+.dlbtn.primary:hover{background:var(--ink-2);color:var(--ground)}
+@media print{.dlbar,.filters{display:none!important} body{-webkit-print-color-adjust:exact;print-color-adjust:exact} details.card{break-inside:avoid-page} .mapgrid,.quad{min-width:0} @page{margin:12mm}}
+</style>"""
+DL_CSS_IG = """<style>
+.dlbar{max-width:1200px;margin:0 auto 12px;display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap}
+.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--paper);text-decoration:none}
+.dlbtn.primary{background:var(--ink);color:#fff}
+@media print{.dlbar{display:none!important}}
+</style>"""
+
+def dl_bar(links):
+    return '<div class="dlbar">' + "".join(
+        f'<a class="dlbtn{" primary" if i == 0 else ""}" href="{href}"' + (f' download="{dl}"' if dl else "") + f'>{label}</a>'
+        for i, (label, href, dl) in enumerate(links)) + '</div>'
+
+def with_bar(page, links, css):
+    page = page.replace("</head>", css + "\n</head>", 1)
+    if '<div class="wrap">' in page:
+        page = page.replace('<div class="wrap">', '<div class="wrap">' + dl_bar(links), 1)
+    else:
+        page = page.replace("<body>\n", "<body>\n" + dl_bar(links) + "\n", 1)
+    return page.replace("</body>", DL_JS + "\n</body>", 1)
+
 def main():
     SITE.mkdir(exist_ok=True)
     B.build()
     page = B.OUT.read_text()
     head, body = page.split('<div class="wrap">', 1)
-    (SITE / "index.html").write_text(doc("The AI Risk Map", "Eighteen AI futures, good and bad, each with both sides' case, sourced probabilities and a test for what needs policy.", head, '<div class="wrap">' + body))
+    index = doc("The AI Risk Map", "Eighteen AI futures, good and bad, each with both sides' case, sourced probabilities and a test for what needs policy.", head, '<div class="wrap">' + body)
+    (SITE / "index.html").write_text(with_bar(index, [("Download PDF summary", "/downloads/ai-risk-map-summary.pdf", "ai-risk-map-summary.pdf"), ("Full PDF, every card", "/downloads/ai-risk-map.pdf", "ai-risk-map.pdf"), ("One-page overview", "/poster", None)], DL_CSS_PAGE))
     cards = B.load_cards()
-    (SITE / "poster.html").write_text(poster(cards))
-    (SITE / "landscape.html").write_text(landscape(cards))
-    (SITE / "anatomy.html").write_text(anatomy(cards))
-    (SITE / "vercel.json").write_text(json.dumps({"cleanUrls": True}, indent=2))
-    print("site built for", URL, [p.name for p in SITE.iterdir()])
+    for name, fn in (("poster", poster), ("landscape", landscape), ("anatomy", anatomy)):
+        links = [("Download PDF", f"/downloads/ai-risk-map-{name}.pdf", f"ai-risk-map-{name}.pdf"),
+                 ("Download image", f"/img/{name}.png", f"ai-risk-map-{name}.png"), ("Full map", "/", None)]
+        (SITE / f"{name}.html").write_text(with_bar(fn(cards), links, DL_CSS_IG))
+    (SITE / "vercel.json").write_text(json.dumps({"cleanUrls": True, "ignoreCommand": "git diff --quiet HEAD^ HEAD -- ."}, indent=2))
+    print("site built for", URL)
 
 if __name__ == "__main__":
     main()

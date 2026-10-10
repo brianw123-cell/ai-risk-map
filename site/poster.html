@@ -40,8 +40,15 @@ a{color:inherit}
 .stats b{display:block;font-family:Archivo,sans-serif;font-size:40px;letter-spacing:-.02em;color:var(--ink);text-transform:none;line-height:1.05}
 @media (max-width:640px){.grid{grid-template-columns:1fr 1fr}.dom{grid-column:1 / -1;padding-bottom:2px}.gh:first-child{display:none}}
 </style>
+<style>
+.dlbar{max-width:1200px;margin:0 auto 12px;display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap}
+.dlbtn{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:10px 14px;border:1px solid var(--ink);border-radius:3px;color:var(--ink);background:var(--paper);text-decoration:none}
+.dlbtn.primary{background:var(--ink);color:#fff}
+@media print{.dlbar{display:none!important}}
+</style>
 </head>
 <body>
+<div class="dlbar"><a class="dlbtn primary" href="/downloads/ai-risk-map-poster.pdf" download="ai-risk-map-poster.pdf">Download PDF</a><a class="dlbtn" href="/img/poster.png" download="ai-risk-map-poster.png">Download image</a><a class="dlbtn" href="/">Full map</a></div>
 <div class="sheet">
 <div class="eyebrow">The AI Risk Map · working draft</div>
 <h1>Eighteen ways AI could go</h1>
@@ -51,5 +58,8 @@ a{color:inherit}
 <div class="stats"><div><b>18</b>scenarios</div><div><b>11</b>policy now</div><div><b>5</b>enforcement gaps</div><div><b>1</b>prepare and watch</div><div><b>1</b>communicate</div><div><b>0</b>signed off by both sides</div></div>
 <div class="foot"><span>Idea: Emad Mostaque, Moonshots with Peter Diamandis, 7 October 2026, at 49:14.</span><span>Full map with every source: <b>ai-risk-map.vercel.app</b></span><span>Working draft, October 2026. 0 of 18 scenarios signed off by both sides so far.</span></div>
 </div>
+<script>(function(){var q=new URLSearchParams(location.search);var b=document.querySelector('.dlbar');
+if(q.has('print')){document.querySelectorAll('details').forEach(function(d){d.open=true});}
+if((q.has('bare')||q.has('print'))&&b){b.remove();}})();</script>
 </body>
 </html>
