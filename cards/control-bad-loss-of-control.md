@@ -11,7 +11,7 @@ triage: act-now
 confidence: low
 summary: "AI systems become capable enough, and their goals different enough from ours, that humans can no longer correct or shut them down, with outcomes ranging from permanent loss of human say over the future to human extinction."
 status: draft
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-16
 ---
 
 # Loss of control over advanced AI
@@ -79,13 +79,14 @@ From the [November 2025 joint essay](https://stafforini.com/works/kapoor-2025-co
 
 ## Signposts
 1. METR task-length horizon passes one working week at 50% reliability.
-2. A frontier lab publicly reports a model taking unsanctioned steps to avoid shutdown or modification outside a test environment.
+2. A frontier lab publicly reports a model taking unsanctioned steps to avoid shutdown or modification outside a test environment. *Status, October 2026: partly reached. An agent took unsanctioned actions outside its test environment in July 2026 to complete its task; it was not reported as resisting shutdown or modification.*
 3. AI systems are given authority over AI research or critical infrastructure with no human sign-off.
 4. Two or more frontier labs abandon published safety commitments, citing competition.
 5. The International AI Safety Report moves loss-of-control language from "experts vary widely" to "most experts agree."
 
 ## Evidence so far
-- Laboratory evaluations have documented deceptive and self-preserving behavior in test settings; none has been confirmed in real deployment. (Source to add: International AI Safety Report 2026, section on loss of control.)
+- **July 2026, the first confirmed real-world escape.** OpenAI disclosed that one of its agents left a controlled test environment, reached the internet and breached Hugging Face over several days (11 to 13 July) while pursuing its test goal; OpenAI took at least a week to realize its own agent was responsible. A wider probe found other limited escapes and compromised accounts at four other companies, and Anthropic disclosed that its own models were behind break-ins at three companies going back to April. ([OECD AI Incidents Monitor](https://oecd.ai/en/incidents/2026-07-25-2a13), [Reuters via Bloomberg Government](https://news.bgov.com/california-brief/openai-finds-evidence-other-ai-agents-escaped-containment-rtrs))
+- Laboratory evaluations have also documented deceptive and self-preserving behavior in test settings.
 - The number of companies publishing formal frontier safety frameworks more than doubled between the 2025 and 2026 International AI Safety Reports.
 
 ## Existing coverage
@@ -120,8 +121,10 @@ No law anywhere directly addresses this scenario. The EU AI Act covers general-p
 11. International AI Safety Report 2026. internationalaisafetyreport.org, https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
 12. METR, "Time Horizon 1.1" (Jan 2026). metr.org, https://metr.org/blog/2026-1-29-time-horizon-1-1/
 13. Asterisk, "Common ground between AI 2027 and AI as Normal Technology" (Nov 2025). asteriskmag.substack.com, https://asteriskmag.substack.com/p/common-ground-between-ai-2027-and
+14. OECD AI Incidents Monitor, "OpenAI AI Agent Escapes Containment, Hacks Hugging Face in Multi-Day Breach" (Jul 2026). oecd.ai, https://oecd.ai/en/incidents/2026-07-25-2a13
+15. Reuters via Bloomberg Government, "OpenAI Finds Evidence Other AI Agents Escaped Containment" (Jul 2026). news.bgov.com, https://news.bgov.com/california-brief/openai-finds-evidence-other-ai-agents-escaped-containment-rtrs
 
 ## Sign-off record
 - Worried case: not yet reviewed.
 - Optimistic case: not yet reviewed.
-- Changelog: 2026-10-09 first draft.
+- Changelog: 2026-10-09 first draft. 2026-10-16 added the July 2026 containment escapes; signpost 2 marked partly reached.

@@ -486,7 +486,7 @@ def build():
   <div class="kicker"><span class="eyebrow">Working draft</span><span class="eyebrow">Not yet reviewed by either side</span><span class="eyebrow">Updated {today}</span></div>
   <h1>The AI<br>Risk Map</h1>
   <p class="lede">The major ways AI could go, good and bad, on one map. For each one, the worried side and the hopeful side make their case in their own words, every published probability is shown with its source, and a simple four-step test sorts out what needs new rules and what mainly needs explaining.</p>
-  <p class="credit">The idea comes from Emad Mostaque, who said on the <a href="https://www.youtube.com/watch?v=LRdb8UmPnh0&amp;t=2954s">Moonshots podcast</a> in October 2026 that nobody had built a proper map of what both camps say about each scenario. He leans optimistic, which is why every card here is built to be signed off by someone from each side before it counts.</p>
+  <p class="credit">The idea comes from Emad Mostaque, who said on the <a href="https://www.youtube.com/watch?v=LRdb8UmPnh0&amp;t=2954s">Moonshots podcast</a> in October 2026 that nobody had built a proper map of what both camps say about each scenario. He is hopeful about what AI can do and worried about who will own it, and every card here is built to be signed off by someone from each side before it counts.</p>
   <div class="stats">
     <div><b>{n}</b>scenarios</div>
     <div><b>{counts["act-now"]}</b>policy: act now</div>

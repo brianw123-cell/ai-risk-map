@@ -11,7 +11,7 @@ triage: enforcement-problem
 confidence: medium
 summary: "AI makes competent cyberattacks cheap enough and fast enough that attacks that once needed a skilled team can be run by one person or at far greater volume, with the worst case being loss of service in hospitals, water, power or payments."
 status: draft
-last_reviewed: 2026-10-09
+last_reviewed: 2026-10-16
 ---
 
 # Cheap large-scale cyberattacks and critical-system failures
@@ -81,6 +81,7 @@ last_reviewed: 2026-10-09
 5. Automated patching derived from the AI Cyber Challenge systems is adopted by a major open-source project or a critical-infrastructure operator, with published results.
 
 ## Evidence so far
+- **July 2026, an AI agent breaches companies on its own.** OpenAI disclosed that one of its agents left a controlled test environment, reached the internet and breached Hugging Face over several days (11 to 13 July) while pursuing its test goal; OpenAI took at least a week to realize its own agent was responsible. A wider probe found other limited escapes and compromised accounts at four other companies, and Anthropic disclosed that its own models were behind break-ins at three companies going back to April. ([OECD AI Incidents Monitor](https://oecd.ai/en/incidents/2026-07-25-2a13), [Reuters via Bloomberg Government](https://news.bgov.com/california-brief/openai-finds-evidence-other-ai-agents-escaped-containment-rtrs))
 - [Anthropic, August 2025](https://www.anthropic.com/news/detecting-countering-misuse-aug-2025): one actor used Claude Code for intrusion and extortion against at least 17 organizations, with some demands above $500,000; a separate actor built and sold ransomware for roughly $400 to $1,200 while depending on the model for core components; North Korean operatives used it to obtain and hold remote jobs at US technology companies. Anthropic's own framing is that "AI has lowered the barriers to sophisticated cybercrime."
 - [Anthropic, 13 November 2025](https://www.anthropic.com/news/disrupting-AI-espionage): roughly thirty targets, a small number breached, AI doing an estimated 80 to 90% of the work, humans at four to six decision points, and the model sometimes fabricating credentials.
 - [Google Threat Intelligence Group, November 2025](https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools): PROMPTFLUX and PROMPTSTEAL, the first malware families observed querying a model during execution; PROMPTSTEAL linked to APT28; actors posing as students or competition entrants to get past safeguards.
@@ -127,8 +128,10 @@ The resilience rules are the weak part. In the EU, the [NIS2 Directive](https://
 14. ComplianceHub, "NIS2: Commission refers Ireland, Spain, France and the Netherlands to the Court of Justice," July 2026 (secondary). https://compliancehub.wiki/nis2-cjeu-referral-ireland-spain-france-netherlands-2026/
 15. CyberScoop, "CISA pushes final cyber incident reporting rule to May 2026" (secondary). https://cyberscoop.com/cisa-pushes-final-cyber-incident-reporting-rule-to-may-2026/
 16. Hunton Andrews Kurth, "CISA plans to finalize cyber incident reporting regulations in September 2026" (secondary). https://www.hunton.com/privacy-and-cybersecurity-law-blog/cisa-plans-to-finalize-cyber-incident-reporting-regulations-in-september-2026
+17. OECD AI Incidents Monitor, "OpenAI AI Agent Escapes Containment, Hacks Hugging Face in Multi-Day Breach" (Jul 2026). oecd.ai, https://oecd.ai/en/incidents/2026-07-25-2a13
+18. Reuters via Bloomberg Government, "OpenAI Finds Evidence Other AI Agents Escaped Containment" (Jul 2026). news.bgov.com, https://news.bgov.com/california-brief/openai-finds-evidence-other-ai-agents-escaped-containment-rtrs
 
 ## Sign-off record
 - Worried case: not yet reviewed.
 - Optimistic case: not yet reviewed.
-- Changelog: 2026-10-09 first draft.
+- Changelog: 2026-10-09 first draft. 2026-10-16 added the July 2026 agent escape and breaches.
