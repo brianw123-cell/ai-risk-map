@@ -340,7 +340,7 @@ a.tile[data-dir="neutral"]{border-left-style:dashed}
 .tile.empty .tile-n{color:var(--ink-3); font-weight:500}
 .dim{opacity:.22}
 /* quadrant */
-.quad{display:grid; grid-template-columns:2rem 1fr 1fr; grid-template-rows:1fr 1fr 2rem; gap:.6rem; min-width:640px}
+.quad{display:grid; grid-template-columns:2rem 1fr 1fr; grid-template-rows:auto auto auto; gap:.6rem; min-width:640px}
 .quadwrap{overflow-x:auto}
 .qcell{background:var(--surface); border:1px solid var(--rule); border-radius:3px; padding:1rem 1.1rem}
 .qcell h3{font-size:1.05rem; margin:0} .qcell p{font-size:.86rem; color:var(--ink-3); margin:.15rem 0 .8rem}
